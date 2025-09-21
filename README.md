@@ -11,6 +11,7 @@ mulai dari konsep desain antarmuka (UI/UX) hingga implementasi menggunakan Flutt
 1. [Road Map Belajar](roadmap.md)  
 2. [Pengantar UI/UX](ui_ux.md)  
    *Memahami dasar-dasar User Interface (UI) dan User Experience (UX), termasuk perbedaan, pentingnya, serta lima lapisan UX (Strategy, Scope, Structure, Skeleton, Surface).*  
+3. [Setup Flutter Windows](setup_flutter.md)
 
 <!-- 2. [Dasar Flutter](Flutter_Dasar.md)  
    *Pengenalan Flutter sebagai framework untuk membangun aplikasi mobile lintas platform. Membahas struktur project, widget dasar, dan cara menjalankan aplikasi pertama.* -->

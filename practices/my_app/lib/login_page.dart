@@ -24,7 +24,9 @@ class _LoginPageState extends State<LoginPage> {
       );
     }
 
-    debugPrint("login failed");
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text("Login Failed")));
   }
 
   @override
@@ -78,19 +80,28 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             //reset password
-            TextButton(
-              onPressed: () => {},
-              child: Text(
-                "Forgot your password?",
-                style: TextStyle(color: Colors.blueAccent),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: () => {},
+                  child: Text(
+                    "Forgot your password?",
+                    style: TextStyle(color: Colors.blueAccent),
+                  ),
+                ),
+              ],
             ),
             SizedBox(height: 16),
             //login button
             ElevatedButton(
               onPressed: () => handleLogin(),
               style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadiusGeometry.circular(8),
+                ),
                 backgroundColor: Colors.blueAccent,
+                minimumSize: Size(double.infinity, 50),
               ),
               child: Text("Login", style: TextStyle(color: Colors.white)),
             ),
